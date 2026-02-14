@@ -278,10 +278,10 @@ ul {
 .topnav__pill {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.2rem;
   background: var(--gray-900);
   border-radius: 50px;
-  padding: 0.4rem;
+  padding: 0.35rem;
   box-shadow: var(--shadow);
   pointer-events: all;
 }
@@ -290,8 +290,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   color: var(--gray-400);
   transition: background-color 0.2s ease, color 0.2s ease;
@@ -308,8 +308,8 @@ ul {
 }
 
 .topnav__link svg {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   fill: currentColor;
 }
 

@@ -678,6 +678,212 @@ ul {
   margin-top: 1rem;
 }
 
+/* ===== Personal Projects (Showcase) ===== */
+.personal-projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.personal-project {
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: 16px;
+  padding: 1.75rem;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-project:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Featured project spans full width */
+.personal-project--featured {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e8f4f8 100%);
+  border-color: #3B5BDB;
+  padding: 2rem 2.25rem;
+}
+
+.personal-project--featured:hover {
+  border-color: #3B5BDB;
+  box-shadow: 0 16px 40px rgba(59, 91, 219, 0.15);
+}
+
+.personal-project__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  gap: 0.75rem;
+}
+
+.personal-project__name {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.personal-project--featured .personal-project__name {
+  font-size: 1.35rem;
+}
+
+.personal-project__badge {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.personal-project__badge--launched {
+  background: var(--accent);
+  color: #fff;
+}
+
+.personal-project__badge--soon {
+  background: #e9ecef;
+  color: #495057;
+}
+
+.personal-project__badge--active {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.personal-project__tagline {
+  font-size: 0.85rem;
+  color: var(--gray-700);
+  line-height: 1.65;
+  margin-bottom: 0.5rem;
+}
+
+.personal-project--featured .personal-project__tagline {
+  font-size: 0.95rem;
+}
+
+.personal-project__desc {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.personal-project__features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.25rem;
+}
+
+.personal-project__features li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.35rem;
+  font-size: 0.75rem;
+  color: var(--gray-700);
+  line-height: 1.6;
+}
+
+.personal-project__features li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+
+.personal-project--featured .personal-project__features li::before {
+  color: #3B5BDB;
+}
+
+.personal-project__features li::before {
+  color: var(--accent);
+}
+
+.personal-project__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.personal-project__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.personal-project__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.15s ease;
+  flex-shrink: 0;
+}
+
+.personal-project__cta:hover {
+  transform: translateY(-1px);
+}
+
+.personal-project__cta--primary {
+  background: #3B5BDB;
+  color: #fff;
+}
+
+.personal-project__cta--primary:hover {
+  background: #2f4abf;
+}
+
+.personal-project__cta--orange {
+  background: #e8590c;
+  color: #fff;
+}
+
+.personal-project__cta--orange:hover {
+  background: #d04f0a;
+}
+
+.personal-project__cta--blue {
+  background: #4C6EF5;
+  color: #fff;
+}
+
+.personal-project__cta--blue:hover {
+  background: #3b5de7;
+}
+
+.personal-project__cta svg {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media (max-width: 900px) {
+  .personal-projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .personal-project--featured {
+    grid-column: 1;
+  }
+}
+
 /* ===== Certifications ===== */
 .cert-card {
   background-color: var(--gray-50);

@@ -426,78 +426,88 @@
       <!-- Projetos Pessoais -->
       <section id="pessoais" class="section fade-in">
         <h2 class="section__title">Projetos Pessoais</h2>
-        <p class="section__subtitle">Produtos próprios em desenvolvimento</p>
+        <p class="section__subtitle">Produtos próprios que estou construindo</p>
 
-        <div class="project-detail">
-          <div class="project-detail__header">
-            <h3 class="project-detail__name">CostGuard</h3>
-            <span class="project-detail__year">2025 - Presente</span>
-          </div>
-          <p class="project-detail__org"><a href="https://costguard.cc" target="_blank" rel="noopener">costguard.cc</a></p>
-          <p class="project-detail__summary">Plataforma de monitoramento e governança de custos de IA. Controle de gastos com APIs de LLMs em tempo real.</p>
-          <div class="project-detail__block">
-            <p class="project-detail__block-title">O que faz</p>
-            <ul>
-              <li>Monitoramento em tempo real de chamadas a APIs de IA</li>
-              <li>Alertas inteligentes para picos de gastos e anomalias</li>
-              <li>Controle de orçamento por projeto, equipe ou modelo com bloqueio automático</li>
-              <li>Suporte multi-fornecedor: OpenAI, Anthropic, Google, Azure, AWS Bedrock</li>
-            </ul>
-          </div>
-          <div class="project-detail__tags">
-            <span class="tag">SaaS</span>
-            <span class="tag">FinOps</span>
-            <span class="tag">LLM</span>
-            <span class="tag">Observabilidade</span>
-          </div>
-        </div>
+        <div class="personal-projects-grid">
 
-        <div class="project-detail">
-          <div class="project-detail__header">
-            <h3 class="project-detail__name">ilug</h3>
-            <span class="project-detail__year">2025 - Presente</span>
-          </div>
-          <p class="project-detail__org"><a href="https://ilug.app" target="_blank" rel="noopener">ilug.app</a></p>
-          <p class="project-detail__summary">Plataforma de aluguel de veículos entre pessoas (peer-to-peer). Conecta proprietários que querem rentabilizar seus veículos a locatários que buscam preços acessíveis.</p>
-          <div class="project-detail__block">
-            <p class="project-detail__block-title">O que faz</p>
-            <ul>
-              <li>Cadastro e validação digital de documentos para proprietários</li>
-              <li>Catálogo de veículos com agendamento flexível (hora, dia ou semana)</li>
-              <li>Pagamentos automatizados com proteção e assistência jurídica</li>
-              <li>Aplicativo disponível na Play Store e App Store</li>
+          <!-- ilug - FEATURED (lançado) -->
+          <div class="personal-project personal-project--featured">
+            <div class="personal-project__top">
+              <h3 class="personal-project__name">ilug.app</h3>
+              <span class="personal-project__badge personal-project__badge--launched">Lançado</span>
+            </div>
+            <p class="personal-project__tagline">Alugue veículos ou ganhe dinheiro com o seu. Direto do celular, sem complicações.</p>
+            <p class="personal-project__desc">Marketplace peer-to-peer de aluguel de veículos. Conecta proprietários que querem rentabilizar seus carros e motos a locatários que buscam preços 15-30% mais acessíveis que locadoras tradicionais.</p>
+            <ul class="personal-project__features">
+              <li>Validação digital de documentos e proteção com seguro</li>
+              <li>Agendamento flexível por hora, dia ou semana</li>
+              <li>Pagamentos automatizados com assistência jurídica</li>
+              <li>Disponível na Play Store e App Store</li>
             </ul>
+            <div class="personal-project__bottom">
+              <div class="personal-project__tags">
+                <span class="tag">Marketplace</span>
+                <span class="tag">Mobile</span>
+                <span class="tag">P2P</span>
+                <span class="tag">Mobilidade</span>
+              </div>
+              <a href="https://ilug.app" target="_blank" rel="noopener" class="personal-project__cta personal-project__cta--primary">
+                Conhecer o ilug
+                <svg viewBox="0 0 24 24"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
+              </a>
+            </div>
           </div>
-          <div class="project-detail__tags">
-            <span class="tag">Marketplace</span>
-            <span class="tag">Mobile</span>
-            <span class="tag">P2P</span>
-            <span class="tag">Mobilidade</span>
-          </div>
-        </div>
 
-        <div class="project-detail">
-          <div class="project-detail__header">
-            <h3 class="project-detail__name">Uallo</h3>
-            <span class="project-detail__year">2025 - Presente</span>
-          </div>
-          <p class="project-detail__org"><a href="https://uallo.com.br" target="_blank" rel="noopener">uallo.com.br</a></p>
-          <p class="project-detail__summary">Cartão fidelidade digital para pequenos e médios comerciantes. Substitui cartões físicos por QR Code integrado ao Apple Wallet e Google Wallet.</p>
-          <div class="project-detail__block">
-            <p class="project-detail__block-title">O que faz</p>
-            <ul>
-              <li>Criação personalizada de cartões fidelidade em minutos</li>
-              <li>Sistema de carimbos automático via QR Code</li>
-              <li>Integração direta com carteiras digitais (Apple/Google Wallet)</li>
-              <li>Notificações automáticas e gestão de clientes ilimitados</li>
+          <!-- Uallo -->
+          <div class="personal-project">
+            <div class="personal-project__top">
+              <h3 class="personal-project__name">Uallo</h3>
+              <span class="personal-project__badge personal-project__badge--active">Ativo</span>
+            </div>
+            <p class="personal-project__tagline">Fidelidade digital na palma da mão.</p>
+            <p class="personal-project__desc">Cartão fidelidade digital para comerciantes. Clientes adicionam na Apple Wallet ou Google Wallet via QR Code. Carimbos automáticos, notificações e gestão ilimitada por R$ 19,90/mês.</p>
+            <ul class="personal-project__features">
+              <li>Criação personalizada de cartões em minutos</li>
+              <li>Carimbos automáticos via QR Code</li>
+              <li>Apple Wallet e Google Wallet integrados</li>
             </ul>
+            <div class="personal-project__bottom">
+              <div class="personal-project__tags">
+                <span class="tag">SaaS</span>
+                <span class="tag">Fidelização</span>
+              </div>
+              <a href="https://uallo.com.br" target="_blank" rel="noopener" class="personal-project__cta personal-project__cta--orange">
+                Visitar
+                <svg viewBox="0 0 24 24"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
+              </a>
+            </div>
           </div>
-          <div class="project-detail__tags">
-            <span class="tag">SaaS</span>
-            <span class="tag">Fidelização</span>
-            <span class="tag">QR Code</span>
-            <span class="tag">Mobile Wallet</span>
+
+          <!-- CostGuard -->
+          <div class="personal-project">
+            <div class="personal-project__top">
+              <h3 class="personal-project__name">CostGuard</h3>
+              <span class="personal-project__badge personal-project__badge--soon">Em breve</span>
+            </div>
+            <p class="personal-project__tagline">Stop AI costs from burning your budget.</p>
+            <p class="personal-project__desc">Monitoramento e governança de custos de IA em tempo real. Alertas inteligentes, controle de orçamento e detecção de anomalias para APIs de LLMs. Suporte a OpenAI, Anthropic, Google, Azure e AWS Bedrock.</p>
+            <ul class="personal-project__features">
+              <li>Rastreamento em tempo real de tokens e custos</li>
+              <li>Limites por projeto, equipe ou modelo</li>
+              <li>Integração com 2 linhas de código</li>
+            </ul>
+            <div class="personal-project__bottom">
+              <div class="personal-project__tags">
+                <span class="tag">SaaS</span>
+                <span class="tag">FinOps</span>
+              </div>
+              <a href="https://costguard.cc" target="_blank" rel="noopener" class="personal-project__cta personal-project__cta--blue">
+                Waitlist
+                <svg viewBox="0 0 24 24"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
+              </a>
+            </div>
           </div>
+
         </div>
       </section>
 
